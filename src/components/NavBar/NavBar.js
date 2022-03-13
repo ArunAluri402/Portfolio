@@ -20,6 +20,7 @@ export default NavBar;
 const Container = styled.div`
   width: 100%;
   height: 7rem;
+  box-sizing: border-box;
   background-image: linear-gradient(360deg, white, lightblue);
 `;
 const Wrapper = styled.div`

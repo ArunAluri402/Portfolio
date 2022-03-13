@@ -3,30 +3,38 @@ import styled from "styled-components";
 
 const Hero = () => {
   return (
-    <Section>
-      <HeroContent>
-        <span>Hey there!</span>
-        <span>Welcome to my website</span>
-        <h1>I am Arun Prakash</h1>
-        <p>
-          Hi! I'm Arun, a software developer from India. I create dynamic
-          webpages using React Js.
-        </p>
+    <SectionWrapper>
+      <Section>
+        <HeroContent>
+          <span>Hey there!</span>
+          <span>Welcome to my website</span>
+          <h1>I am Arun Prakash</h1>
+          <p>
+            Hi! I'm Arun, a software developer from India. I create dynamic
+            webpages using React Js.
+          </p>
 
-        <ButtonWrapper>
-          <button type="button" className="top">
-            Hire Me
-          </button>
-          <button type="button" className="bottom" />
-          <div className="cv">Download CV</div>
-        </ButtonWrapper>
-      </HeroContent>
-      <Image src="./images/character.png" />
-    </Section>
+          <ButtonWrapper>
+            <button type="button" className="top">
+              Hire Me
+            </button>
+            <button type="button" className="bottom" />
+            <div className="cv">Download CV</div>
+          </ButtonWrapper>
+        </HeroContent>
+        <Image src="./images/character.png" />
+      </Section>
+    </SectionWrapper>
   );
 };
 
 export default Hero;
+
+const SectionWrapper = styled.div`
+height: auto;
+width: auto;
+box-sizing: border-box;
+`;
 const Section = styled.main`
   display: flex;
   justify-content-space-between;
@@ -40,7 +48,6 @@ const Section = styled.main`
   overflow : visible;
 `;
 const HeroContent = styled.div`
-  
   margin-top: -50px;
   height: auto;
   padding: 100px 0px;

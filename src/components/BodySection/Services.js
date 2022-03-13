@@ -3,79 +3,86 @@ import styled from "styled-components";
 
 const Services = () => {
   return (
-    <Wrapper>
-      <ServicesWrapper>
-        <div className="headingWrapper">
-          <h6>SERVICES</h6>
-        </div>
+    <SectionWrapper>
+      <Wrapper>
+        <ServicesWrapper>
+          <div className="headingWrapper">
+            <h6>SERVICES</h6>
+          </div>
 
-        <h2>Design that solve problems, One product at a time.</h2>
-      </ServicesWrapper>
+          <h2>Design that solve problems, One product at a time.</h2>
+        </ServicesWrapper>
 
-      <ServiveDetailGrid>
-        <div className="serviceWrapper">
-          <img src="./images/send.png" />
-          <h5>What I can do for you</h5>
-          <p>
-            Fast, better websites that your users love. Here's all the services
-            i provide:
-          </p>
-          <ul>
-            <li>Web Design</li>
-            <li>Front-end Development</li>
-          </ul>
-        </div>
+        <ServiveDetailGrid>
+          <div className="serviceWrapper">
+            <img src="./images/send.png" />
+            <h5>What I can do for you</h5>
+            <p>
+              Fast, better websites that your users love. Here's all the
+              services i provide:
+            </p>
+            <ul>
+              <li>Web Design</li>
+              <li>Front-end Development</li>
+            </ul>
+          </div>
 
-        <div className="serviceWrapper">
-          <img src="./images/categories.png" />
-          <h5>Applications I'm fluent in</h5>
-          <p>
-            Every designer needs the right tools to do the perfect job.
-            Thankfully, I'm multilingual.
-          </p>
-          <ul>
-            <li>Web Flow</li>
-            <li>VS Code</li>
-            <li>Photoshop</li>
-            <li>Illustrator</li>
-          </ul>
-        </div>
+          <div className="serviceWrapper">
+            <img src="./images/categories.png" />
+            <h5>Applications I'm fluent in</h5>
+            <p>
+              Every designer needs the right tools to do the perfect job.
+              Thankfully, I'm multilingual.
+            </p>
+            <ul>
+              <li>Web Flow</li>
+              <li>VS Code</li>
+              <li>Photoshop</li>
+              <li>Illustrator</li>
+            </ul>
+          </div>
 
-        <div className="serviceWrapper">
-          <img src="./images/layers.png" />
-          <h5>Languages I Know</h5>
-          <p>
-            Better knowledge is necessary to make the work flow to be smooth,
-            here are the coding languages I know
-          </p>
-          <ul>
-            <li>HTML 5</li>
-            <li>CSS 3</li>
-            <li>JavaScript</li>
-            <li>React Js</li>
-          </ul>
-        </div>
+          <div className="serviceWrapper">
+            <img src="./images/layers.png" />
+            <h5>Languages I Know</h5>
+            <p>
+              Better knowledge is necessary to make the work flow to be smooth,
+              here are the coding languages I know
+            </p>
+            <ul>
+              <li>HTML 5</li>
+              <li>CSS 3</li>
+              <li>JavaScript</li>
+              <li>React Js</li>
+            </ul>
+          </div>
 
-        <div className="serviceWrapper">
-          <img src="./images/flag.png" />
-          <h5>What you can expect</h5>
-          <p>
-            I design websites that are more functional and pretty. I make them
-            shippable and usable.
-          </p>
-          <ul>
-            <li>Clean Ui</li>
-            <li>Functional</li>
-            <li>Dynamic</li>
-            <li>Refined source code</li>
-          </ul>
-        </div>
-      </ServiveDetailGrid>
-    </Wrapper>
+          <div className="serviceWrapper">
+            <img src="./images/flag.png" />
+            <h5>What you can expect</h5>
+            <p>
+              I design websites that are more functional and pretty. I make them
+              shippable and usable.
+            </p>
+            <ul>
+              <li>Clean Ui</li>
+              <li>Functional</li>
+              <li>Dynamic</li>
+              <li>Refined source code</li>
+            </ul>
+          </div>
+        </ServiveDetailGrid>
+      </Wrapper>
+    </SectionWrapper>
   );
 };
 
 export default Services;
+const SectionWrapper = styled.div`
+  height: auto;
+  width: auto;
+  box-sizing: border-box;
+`;
 
 const Wrapper = styled.div`
   display: flex;
@@ -90,10 +97,9 @@ const Wrapper = styled.div`
   max-width: 1098px;
   box-sizing: border-box;
 
-  @media screen and (max-width: 767px){
+  @media screen and (max-width: 767px) {
     width: 90%;
   }
-
 `;
 
 const ServicesWrapper = styled.div`
